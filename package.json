@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "concurrently \"npm start --prefix backend\" \"npm start --prefix web\"",
+    "server": "npm start --prefix backend",
+    "client": "npm start --prefix web",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "react-router-dom": "^7.7.1",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
